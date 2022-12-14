@@ -4,20 +4,20 @@ import javax.persistence.*;
 
 
 @Entity
-@Table(name="Usuario", schema="public")
+@Table(name="usuario", schema="public")
 public class usuario {
 	
 	//Definicion de atributos
 	@Id
 	@Column(name="id", unique=true, nullable=false)
 	private Integer id;
-	@Column(name="nombre")
+	@Column(name="nombre",nullable=false)
 	private String nombre;
-	@Column(name="apellidos")
+	@Column(name="apellidos",nullable=false)
 	private String apellidos;
-	@Column(name="edad")
+	@Column(name="edad",nullable=false)
 	private Integer edad;
-	@Column(name="correo")
+	@Column(name="correo",nullable=false)
 	private String correo;
 	
 	//Constructores

@@ -25,7 +25,7 @@ public class usuarioServicioImpl implements usuarioServicio {
 	@Override
 	public List<usuario> buscarTodos() {
 
-		return em.createQuery("SELECT usuario FROM usuario").getResultList();
+		return em.createQuery("SELECT usu FROM usuario usu").getResultList();
 		
 	}
 

@@ -13,7 +13,7 @@ public class main {
 	public static void main(String[] args) {
 		ApplicationContext context= new ClassPathXmlApplicationContext("bean.xml");
 		consultas consulta = (consultas) context.getBean(consultas.class);
-		consulta.insertarUnUsuario(new usuario(4,"Jesus", "Pablo",21,"jpa@gmail.com"));
+		consulta.insertarUnUsuario(new usuario(11,"Juan", "Bada",21,"juan@gmail.com"));
 		System.out.println("Lista usuarios: " + consulta.buscarTodosUsuarios());
 
 	}
